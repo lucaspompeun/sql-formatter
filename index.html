@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SQL Formatter</title>
+    <meta name="description" content="Super simple SQL formatter.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/app.js"></script>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/sql-formatter@4.0.2/dist/sql-formatter.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>SQL Formatter</h2>
+        <textarea id="inputSql" placeholder="Enter your SQL query here..."></textarea>
+        <button id="beautifyButton">Format SQL</button>
+        <div id="output" class="output" style="display: none;">
+            <div class="output-header">
+                <h3>Formatted SQL:</h3>
+                <button id="copyButton" class="copy-button">Copy</button>
+            </div>
+            <pre><code id="outputSql"></code></pre>
+        </div>
+        <div id="error" class="error" style="display: none;"></div>
+    </div>
+</body>
+
+</html>
